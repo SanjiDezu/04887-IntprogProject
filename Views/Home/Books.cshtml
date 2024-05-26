@@ -1,0 +1,273 @@
+﻿@page
+@model Gallery_Tallo.Views.Home.BooksModel
+@{
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        
+        <title>Press</title>
+        <style>
+            .background-container {
+                width: 100%;
+                height: 30vh; /* Adjust the height as needed */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-image: url('/images/logos/mainbackground2.png'); /* Use the actual path to your image */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 10px 20px;
+                position: absolute;
+                top: 0;
+                z-index: 1;
+            }
+
+            .nav-links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .nav-links li {
+                    margin: 0 10px;
+                }
+
+                .nav-links a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+
+            .social-media {
+                display: flex;
+                align-items: center;
+            }
+
+                .social-media a {
+                    margin-left: 10px;
+                }
+
+                .social-media img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+            .content {
+                position: relative;
+                z-index: 1;
+                padding: 20px;
+                text-align: center;
+                background: none; /* Optional: Adds a light background to content */
+                border-radius: 10px;
+                color: white;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                margin: 10px;
+                border: 2px solid black;
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                font-size: 16px;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+
+                .btn:hover {
+                    background-color: black;
+                    color: white;
+                }
+
+            .containers {
+                text-align: center; /* Center align the content */
+            }
+
+            .book-container {
+                text-align: center; /* Center align the content */
+                margin-bottom: 20px; /* Add margin for spacing */
+            }
+
+            h2 {
+                padding-bottom: 10px; /* Add padding for spacing */
+            }
+
+            .image-containers {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; /* Allow images to wrap to next line */
+            }
+
+            .image-item {
+                margin: 10px; /* Adjust margin for spacing */
+                text-align: center; /* Center align the image and title */
+            }
+
+                .image-item img {
+                    width: 200px; /* Adjust width as needed */
+                    height: auto;
+                    border: 2px solid black; /* Add a black border around the images */
+                    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+                }
+
+            .image-title {
+                margin-top: 5px; /* Add margin for spacing between image and title */
+            }
+
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 50%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+                .close:hover,
+                .close:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="background-container">
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a asp-action="aboutme" class="btn1">About Me</a></li>
+                    <li><a href="Books">Books</a></li>
+                    <li><a href="Blog">Blog</a></li>
+                    <li><a asp-action="Press" class="btn1">Press</a></li>
+                    <li><a asp-action="contact" class="btn1">Contacts</a></li>
+                    <li><a href="Index">Home</a></li>
+                </ul>
+                <div class="social-media">
+                    <a href="https://www.youtube.com/channel/UCk8KNHeFef2K29Lvi8jC0jw" target="_blank">
+                        <img src="/images/logos/youtube.png" alt="YouTube"> <!-- Replace 'youtube-logo.png' with the path to your image -->
+                    </a>
+                    <a href="https://www.facebook.com/kristianmarpe.tallo.5" target="_blank">
+                        <img src="/images/logos/facebook.png" alt="Facebook"> <!-- Replace 'facebook-logo.png' with the path to your image -->
+                    </a>
+                    <a href="https://www.instagram.com/im_notsanji/" target="_blank">
+                        <img src="/images/logos/instagram.png" alt="Instagram"> <!-- Replace 'instagram-logo.png' with the path to your image -->
+                    </a>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="content">
+                <h1>Make your Branding conscious and powerful!</h1>
+                <p>Explore our collection and find your next favorite read!</p>
+                <br />
+                <a href="aboutme" class="btn">About Me</a>
+                <a href="Blog" class="btn">My Blogs</a>
+            </div>
+        </div>
+        <div class="image-containers">
+            <div class="image-item">
+                <img src="/images/logos/books1.png" alt="Image 1">
+                <div class="image-title">ALONE</div>
+                <button class="buy-button" onclick="openModal('ALONE')">Buy Book</button>
+            </div>
+            <div class="image-item">
+                <img src="/images/logos/books2.png" alt="Image 2">
+                <div class="image-title">A Million To One</div>
+                <button class="buy-button" onclick="openModal('A Million To One')">Buy Book</button>
+            </div>
+            <div class="image-item">
+                <img src="/images/logos/books3.png" alt="Image 3">
+                <div class="image-title">THE HYPOCRITE WORLD</div>
+                <button class="buy-button" onclick="openModal('THE HYPOCRITE WORLD')">Buy Book</button>
+            </div>
+            <div class="image-item">
+                <img src="/images/logos/books4.png" alt="Image 4">
+                <div class="image-title">DON'T LOOK BACK'</div>
+                <button class="buy-button" onclick="openModal('DON\'T LOOK BACK')">Buy Book</button>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Select Book and Quantity</h2>
+                <select id="bookSelection">
+                    <option value="ALONE">ALONE</option>
+                    <option value="A Million To One">A Million To One</option>
+                    <option value="THE HYPOCRITE WORLD">THE HYPOCRITE WORLD</option>
+                    <option value="DON'T LOOK BACK'">DON'T LOOK BACK'</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button onclick="buyBooks()">Buy</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button id="addBookBtn">Add Book</button>
+
+        <div id="bookForm" style="display: none;">
+            <h2>Add New Book</h2>
+            <form id="bookFormElement">
+                <label for="bookImage">Book Image:</label><br>
+                <input type="file" id="bookImage" name="bookImage" accept="image/*"><br><br>
+
+                <label for="bookTitle">Book Title:</label><br>
+                <input type="text" id="bookTitle" name="bookTitle"><br><br>
+
+                <label for="bookCost">Book Cost:</label><br>
+                <input type="number" id="bookCost" name="bookCost"><br><br>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <div id="bookList">
+            <!-- Display added books here -->
+        </div>
+        <script src="/js/Books.js"></script>
+    </body>
+    </html>
+
+}

@@ -1,0 +1,134 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url('/images/logos/aboutmebg.png'); /* Replace 'background-image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff; /* Set text color to white for better readability on dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color for better readability */
+            border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+            .contact-info p {
+                margin: 10px 0;
+            }
+
+            .contact-info a {
+                color: #007bff;
+                text-decoration: none;
+            }
+
+                .contact-info a:hover {
+                    text-decoration: underline;
+                }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .nav-links li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                .nav-links li:last-child {
+                    margin-right: 0;
+                }
+
+            .nav-links a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+            }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="aboutme" class="btn1">About Me</a></li>
+                <li><a href="Books">Books</a></li>
+                <li><a href="Blog">Blog</a></li>
+                <li><a href="Press" class="btn1">Press</a></li>
+                <li><a href="contact">Contacts</a></li>
+                <li><a href="Index">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCk8KNHeFef2K29Lvi8jC0jw" target="_blank">
+                    <img src="/images/logos/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://www.facebook.com/kristianmarpe.tallo.5" target="_blank">
+                    <img src="/images/logos/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/im_notsanji/" target="_blank">
+                    <img src="/images/logos/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="tallokristian1@gmail.com">tallokristian1@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1234567890</a></p>
+                <p><strong>Address:</strong> 856 Englis V. Rama, Cebu City, Cebu, Philippines</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

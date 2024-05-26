@@ -1,0 +1,273 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/Blog.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Press</title>
+    <style>
+        .background-container {
+            width: 100%;
+            height: 60vh; /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url('/images/logos/mainbackground2.png'); /* Use the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .nav-links li {
+                margin: 0 10px;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+        }
+
+            .social-media a {
+                margin-left: 10px;
+            }
+
+            .social-media img {
+                width: 24px;
+                height: 24px;
+            }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+            text-align: center;
+            background: none; /* Optional: Adds a light background to content */
+            border-radius: 10px;
+            color: white;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: black;
+                color: white;
+            }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .blog-list {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .blog-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Adjust width to fit two cards side by side */
+            box-sizing: border-box;
+        }
+
+            .blog-card img {
+                width: 100%;
+                height: auto;
+            }
+
+        .blog-card-content {
+            padding: 20px;
+        }
+
+        .blog-card h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .blog-card a {
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+            .blog-card a:hover {
+                text-decoration: underline;
+            }
+
+        .form-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Text display area */
+        .text-display {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quote-container {
+            background-color: #f9f9f9; /* Light gray background */
+            border-left: 5px solid #007bff; /* Blue border on the left */
+            padding: 15px;
+            margin: 20px auto; /* Center the container horizontally */
+            max-width: 500px; /* Optional: Set a maximum width for better readability */
+            text-align: center; /* Center the text inside the container */
+        }
+
+        /* Style for the quote text */
+        .quote-text {
+            font-style: italic; /* Italicize the text */
+            color: #333; /* Dark gray text color */
+            font-size: 1.1rem; /* Adjust the font size */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a asp-action="aboutme" class="btn1">About Me</a></li>
+                <li><a href="Books">Books</a></li>
+                <li><a href="Blog">Blog</a></li>
+                <li><a asp-action="Press" class="btn1">Press</a></li>
+                <li><a asp-action="contact" class="btn1">Contacts</a></li>
+                <li><a href="Index">Home</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCk8KNHeFef2K29Lvi8jC0jw" target="_blank">
+                    <img src="/images/logos/youtube.png" alt="YouTube"> <!-- Replace 'youtube-logo.png' with the path to your image -->
+                </a>
+                <a href="https://www.facebook.com/kristianmarpe.tallo.5" target="_blank">
+                    <img src="/images/logos/facebook.png" alt="Facebook"> <!-- Replace 'facebook-logo.png' with the path to your image -->
+                </a>
+                <a href="https://www.instagram.com/im_notsanji/" target="_blank">
+                    <img src="/images/logos/instagram.png" alt="Instagram"> <!-- Replace 'instagram-logo.png' with the path to your image -->
+                </a>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <div class="content">
+            <h1>BLOG</h1>
+            <p>Explore our collection and find your next favorite read!</p>
+            <br />
+        </div>
+    </div>
+   
+    </div>
+    </div>
+
+    <div class="container">
+        <h1>Book Blog</h1>
+        <div class="blog-list">
+            <div class="blog-card">
+                <img src="/images/logos/artsy.png" alt="Blog Post 1 Image"> <!-- Replace with the actual image path -->
+                <div class="blog-card-content">
+                    <h3>Artsy Reader</h3>
+                    <p> This week’s topic is Authors I’d Love a New Book From. These could be authors that have passed away, ...</p>
+                    <a href="https://https://www.thatartsyreadergirl.com/">Read more</a> <!-- Replace with the actual blog post link -->
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="/images/logos/literary.png" alt="Blog Post 2 Image"> <!-- Replace with the actual image path -->
+                <div class="blog-card-content">
+                    <h3>Literary Titan</h3>
+                    <p>In My Brother’s Keeper, two brothers are among the survivors of a plane crash</p>
+                    <a href="https://https://literarytitan.com/">Read more</a> <!-- Replace with the actual blog post link -->
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="/images/logos/memory.png" alt="Blog Post 3 Image"> <!-- Replace with the actual image path -->
+                <div class="blog-card-content">
+                    <h3>The Memory of us</h3>
+                    <p>If you can’t trust your head, can you trust your heart?</p>
+                    <a href="https://jillsbookcafe.blog/2024/05/23/jills-thursday-kindle-bargains-4/">Read more</a> <!-- Replace with the actual blog post link -->
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div class="container">
+        <h2>Add A Simple Quote</h2>
+        <form id="sentenceForm">
+            <div class="mb-3">
+                <label for="sentenceInput" class="form-label">Publish A Quote: :</label>
+                <input type="text" class="form-control" id="sentenceInput" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- Div to display the entered text -->
+        
+    </div>
+
+    <p style="text-align: center;">Short Quotes You've Published'</p>
+    <div id="sentenceDisplay" class="mt-4 quote-container"></div>
+</body>
+</html>

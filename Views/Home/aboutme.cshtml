@@ -1,0 +1,114 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('/images/logos/aboutmebg.png'); /* Replace 'background-image.jpg' with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff; /* Set text color to white for better readability on dark background */
+            background-attachment: fixed;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-container {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .nav-links li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                .nav-links li:last-child {
+                    margin-right: 0;
+                }
+
+            .nav-links a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+            }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+            .container p {
+                text-align: justify;
+                margin-bottom: 20px; /* Add some space between paragraphs */
+            }
+
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="navbar">
+            <ul class="nav-links">
+                <li><a href="aboutme" class="btn1">About Me</a></li>
+                <li><a href="Books">Books</a></li>
+                <li><a href="Blog">Blog</a></li>
+                <li><a href="Press" class="btn1">Press</a></li>
+                <li><a asp-action="contact" class="btn1">Contacts</a></li>
+                <li><a href="Index">Home</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UCk8KNHeFef2K29Lvi8jC0jw" target="_blank">
+                    <img src="/images/logos/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://www.facebook.com/kristianmarpe.tallo.5" target="_blank">
+                    <img src="/images/logos/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/im_notsanji/" target="_blank">
+                    <img src="/images/logos/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>About Me</h1>
+            <img class="profile-img" src="/images/logos/aboutme1.png" alt="Profile Picture">
+            <p>Hello, fellow book lovers! My name is Kristian Tallo, and I'm passionate about everything related to books. Whether it's diving into a captivating novel, exploring the intricacies of non-fiction, or discovering hidden gems in poetry, books have always been an integral part of my life.</p>
+            <p>My journey as a book enthusiast has led me to explore various genres, authors, and literary styles. I believe that books have the power to educate, inspire, and transport us to different worlds. They spark our imagination, broaden our perspectives, and connect us with people and ideas beyond our own experiences.</p>
+            <p>On this website, I aim to share my love for books through reviews, recommendations, and discussions. Whether you're a seasoned reader looking for your next literary adventure or someone new to the world of books seeking guidance, I hope to provide valuable insights and foster a community where we can celebrate the joy of reading together.</p>
+            <p>Thank you for joining me on this literary journey!</p>
+        </div>
+    </div>
+</body>
+</html>
