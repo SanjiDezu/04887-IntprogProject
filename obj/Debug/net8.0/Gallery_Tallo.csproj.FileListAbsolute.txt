@@ -1,0 +1,58 @@
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.AssemblyInfo.cs
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.RazorAssemblyInfo.cache
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.RazorAssemblyInfo.cs
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\appsettings.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\global.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.staticwebassets.runtime.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.exe
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.deps.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.runtimeconfig.json
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.dll
+C:\Users\user\Downloads\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.pdb
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.Gallery_Tallo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.build.Gallery_Tallo.props
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Gallery_Tallo.props
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Gallery_Tallo.props
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\scopedcss\bundle\Gallery_Tallo.styles.css
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.dll
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\refint\Gallery_Tallo.dll
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.pdb
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.genruntimeconfig.cache
+C:\Users\user\Downloads\Gallery_Tallo\obj\Debug\net8.0\ref\Gallery_Tallo.dll
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\appsettings.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\global.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.staticwebassets.runtime.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.exe
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.deps.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.runtimeconfig.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.dll
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\bin\Debug\net8.0\Gallery_Tallo.pdb
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.AssemblyInfoInputs.cache
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.AssemblyInfo.cs
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.csproj.CoreCompileInputs.cache
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.RazorAssemblyInfo.cache
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.RazorAssemblyInfo.cs
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.Gallery_Tallo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.build.Gallery_Tallo.props
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Gallery_Tallo.props
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Gallery_Tallo.props
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\scopedcss\bundle\Gallery_Tallo.styles.css
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.dll
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\refint\Gallery_Tallo.dll
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.pdb
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\Gallery_Tallo.genruntimeconfig.cache
+C:\Users\Cay Aguanta\Downloads\Gallery_Tallo\Gallery_Tallo\obj\Debug\net8.0\ref\Gallery_Tallo.dll
